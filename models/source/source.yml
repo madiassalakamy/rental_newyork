@@ -1,0 +1,4 @@
+sources:
+  - name: raw_newyork
+    tables:
+      - name: rental_newyork
