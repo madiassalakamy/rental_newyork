@@ -1,0 +1,10 @@
+
+models:
+  - name: dim_station
+    description: "station model"
+    columns:
+      - name: station_id
+        description: "l'identifiant de la dim station"
+        data_tests:
+          - unique
+          - not_null

@@ -5,7 +5,8 @@ with raw_newyork as (
 select * exclude('tripduration','gender'),
 round(tripduration/ 60) as duration_min,
 case
-when gender then 'homme' 
-else 'femme'
+when gender=1 then 'homme'
+when gender=2 then 'femme' 
+else 'inconnu'
 end as genre
 from raw_newyork
