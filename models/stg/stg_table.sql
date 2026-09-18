@@ -8,5 +8,6 @@ case
 when gender=1 then 'homme'
 when gender=2 then 'femme' 
 else 'inconnu'
-end as genre
+end as genre,
+count(1) over(partition by gender) as nbregender
 from raw_newyork
